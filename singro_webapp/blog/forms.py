@@ -5,7 +5,7 @@ class PostForm(forms.ModelForm):
 
     class Meta():
         model = Post
-        fields = ('author','title','text')
+        fields = ('author','title','text','track_url')
 
         # This is where we define widgets . we pass as attributes the class that will affect the widget
         # the class specified are our own classes , except for the textarea widget , it contains two css and javascript classes that we will later add
@@ -13,6 +13,7 @@ class PostForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class':'textinputclass'}),
             'text': forms.Textarea(attrs={'class':'editable medium-editor-textarea postcontent '}),
+            'track_url': forms.URLInput(attrs={'class': 'urlinputclass'}),
 
         }
 
