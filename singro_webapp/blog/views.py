@@ -65,7 +65,7 @@ class DraftListView(LoginRequiredMixin,ListView):
 @login_required
 def post_publish(request,pk):
     post= get_object_or_404(Post,pk=pk)
-    post.publish
+    post.publish()
     return  redirect('post_detail',pk=post.pk)
 
 
@@ -74,6 +74,7 @@ def post_publish(request,pk):
 @login_required
 def add_comment_to_post(request,pk):
     post = get_object_or_404(Post,pk=pk)
+    form = CommentForm()
     if request.method == 'POST':
         form = CommentForm(request.POST)
         if form.is_valid():
@@ -84,7 +85,8 @@ def add_comment_to_post(request,pk):
 
         else:
             form = CommentForm()
-        return render(request, 'blog/comment_form.html',{'form':form})
+            return render(request, 'blog/comment_form.html',{'form':form})
+    return render(request, 'blog/comment_form.html', {'form': form})
 
 
 @login_required

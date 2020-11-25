@@ -8,7 +8,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()
     track_url= models.URLField(blank=True)
-    create_date = models.DateTimeField(default=timezone.now())
+    created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True , null=True)
 
 
@@ -30,7 +30,7 @@ class Comment(models.Model):
     post = models.ForeignKey('blog.Post',related_name='comments',on_delete=models.CASCADE) #connect each comment to a post
     author=models.CharField(max_length=200)
     text = models.TextField()
-    create_date = models.DateTimeField(default=timezone.now())
+    created_date = models.DateTimeField(default=timezone.now)
     approved_comment= models.BooleanField(default=False)
 
 
