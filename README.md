@@ -33,7 +33,9 @@ Current technologies used :
 Current technologies used :
 
           Sketching : 
-                - Figma 
+                - Concepts iPad Version 
+          User Flows:
+                - Figma  
           Wireframes, Mockups , Prototypes: 
                 - Figma 
 
