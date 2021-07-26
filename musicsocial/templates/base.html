@@ -3,9 +3,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Musitalk</title>
+    <title>Singro</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -16,18 +16,18 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <link rel="stylesheet" href="{% static 'musicsocial/css/master.css' %}">
 
   </head>
   <body>
 
-    <nav class="navbar mynav" role="navigation" id='navbar'>
+    <nav class="navbar navbar-custom" role="navigation" id='navbar'>
       <div class="contianer">
-        <a class="navbar-brand mynav" href="{% url 'home' %}">Musitalk</a>
+        <a class="navbar-brand mynav" href="{% url 'home' %}"><img class='logonav' src="{% static 'musicsocial/images/logo.png' %}" alt=""></a>
 
-        <ul class="nav navbar-nav navbar-right">
+        {% comment %} <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
-          <li><a href="{% url 'posts:create' %}">Post</a></li>
+          <li class="nav-item"><a href="{% url 'posts:create' %}">Post</a></li>
           <li><a href="{% url 'groups:all' %}">Groups</a></li>
           <li><a href="{% url 'groups:create' %}">Create Group</a></li>
           <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
@@ -39,13 +39,13 @@
           <li><a href="{% url 'accounts:signup' %}">Sign Up</a></li>
           {% endif %}
 
-        </ul>
+        </ul> {% endcomment %}
 
       </div>
 
     </nav>
 
-    <div class="container mycontent">
+    <div class="container-fluid mycontent">
         {% block content %}
         {% endblock %}
     </div>

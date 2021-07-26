@@ -1,5 +1,35 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-    <h1>Welcome to Musitalk!</h1>
+
+<div class="row">
+        <div class="col-5 top-content-left">
+            <h1 class='home-t-h1'>Bringing songwriters and music producers together!</h1>
+            <h3 class='home-t-h3'>Collaboration through seemingless effort is our main mission</h1>
+
+        </div>
+        <div class="col-7 top-content-right "> 
+        <img class='home-t-img1' src="{% static 'musicsocial/images/imagepc.jpg' %}" alt="">
+        </div>
+        
+    </div> 
+
+
+        {% comment %} <div class="homeimg1">
+        <img class='logonav' src="{% static 'musicsocial/images/imagepc.jpg' %}" alt="">
+    
+    </div>
+        <div class="homeimg2">
+        <img class='logonav' src="{% static 'musicsocial/images/singer.jpg' %}" alt="">
+    
+    </div>
+
+        <div class="homeh2">
+
+            <h1>Join today and collaborate</h1>
+
+    
+    </div> {% endcomment %}
+
 {% endblock %}
