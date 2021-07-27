@@ -14,6 +14,35 @@
         </div>
         
     </div> 
+    <div class="row">
+        <div class="col-5 mid-content-left">
+            <img class='home-m-img2' src="{% static 'musicsocial/images/singer.jpg' %}" alt="">
+        </div>
+        <div class="col-5 mid-content-right "> 
+                <h1 class='home-m-h1'>Join today and collaborate</h1>
+
+            {% comment %} <h1 class='home-m-h1'>Bringing songwriters and music producers together!</h1> {% endcomment %}
+
+        </div>
+        <div class="col "> 
+            {% comment %} <button type="button" class="btn signup-button" href="{% url 'accounts:signup' %}" role ="button">Sign Up</button> {% endcomment %}
+            <a class="btn signup-button" href="{% url 'accounts:signup' %}" role ="button">Sign Up</a>
+
+
+            {% comment %} <h1 class='home-m-h1'>Bringing songwriters and music producers together!</h1> {% endcomment %}
+
+        </div>
+        
+    </div> 
+    <div class="row">
+        <div class="col b-content ">
+
+        <h4 class="home-b-h4">Already have an account ? <a class='login-home' href="{% url 'accounts:login' %}">Log In</a></h4>
+
+        </div>
+
+        
+    </div> 
 
 
         {% comment %} <div class="homeimg1">

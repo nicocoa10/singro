@@ -58,14 +58,67 @@ body {
     color: rgba(181, 23, 158, 1);
 }
 
+
 .home-t-img1 {
+    position: absolute;
     width: 832px;
     height: 583px;
+
+}
+
+.mid-content-left {
+    padding-left: 0px;
+    /* border: 5px solid green; */
+
+}
+
+.mid-content-right {
+    /* border: 5px solid green; */
+
 }
 
 .top-content-right {
     /* border: solid black; */
 
+}
+
+.home-m-img2 {
+    /* border: 5px solid purple; */
+    width: 732px;
+    height: 483px;
+}
+
+.home-m-h1 {
+    /* border: 2px solid red; */
+    width: 400px;
+    margin-left: 130px;
+    margin-top: 250px;
+
+    font-size: 60px;
+    font-weight: 400;
+    color: rgba(114, 9, 183, 1);
+}
+
+.signup-button {
+    margin-top: 305px;
+    background-color: rgba(247, 37, 133, 1);
+    color: rgba(155, 220, 240, 1);
+    width: 150px;
+    border: 2px solid rgba(76, 201, 240, 1)
+}
+
+.b-content {
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    padding-left: 1000px;
+}
+
+.home-b-h4 {
+    color: rgba(58, 12, 163, 1);
+}
+
+.login-home {
+    color: rgba(155, 220, 240, 1);
 }
 
 /*
