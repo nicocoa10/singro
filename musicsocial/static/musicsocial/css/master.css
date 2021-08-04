@@ -20,13 +20,17 @@ body {
 
 }
 
+.nav-item {
+    margin-right: 25px;
+}
+
 /* change the color of active or hovered links */
-.navbar-right a:hover {
+.nav-item a:hover {
     color: rgba(247, 37, 133);
     /* add background-color to active links */
 }
 
-.navbar-right li:hover a {
+.nav-item li:hover a {
     background-color: rgba(113, 9, 183, 0.379);
     /* add background-color to active links */
 }
@@ -35,7 +39,7 @@ body {
     background-color: #ff5500;
 } */
 
-.navbar-right a {
+.nav-item a {
     /* border: 1px solid black; */
     color: rgba(114, 9, 183, 1);
     font-weight: 480;
