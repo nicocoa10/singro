@@ -3,6 +3,13 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+
 .navbar {
     margin-top: 5px;
     margin-left: 10px;
@@ -23,6 +30,8 @@ body {
 .nav-item {
     margin-right: 25px;
 }
+
+.row {}
 
 /* change the color of active or hovered links */
 .nav-item a:hover {
@@ -45,17 +54,32 @@ body {
     font-weight: 480;
 }
 
-.top-content-left {
-    /* border: solid black; */
-    margin-top: 50px;
 
+.note {
+    animation: rotation 8s infinite linear;
 }
 
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+
+
 .home-t-h1 {
-    font-size: 60px;
+    margin-top: 0px;
+    font-size: 50px;
     font-weight: 400;
     color: rgba(114, 9, 183, 1);
 }
+
+
 
 .home-t-h3 {
     font-weight: 300;
@@ -64,20 +88,25 @@ body {
 
 
 .home-t-img1 {
-    position: absolute;
-    width: 832px;
-    height: 583px;
-
+    /* position: absolute; */
+    max-width: 100%;
+    height: auto;
 }
+
+
 
 .mid-content-left {
-    padding-left: 0px;
     /* border: 5px solid green; */
-
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
-.mid-content-right {
+.top-content-right {
     /* border: 5px solid green; */
+    padding-right: 0px;
+    padding-left: 0px;
+
+
 
 }
 
@@ -87,16 +116,19 @@ body {
 }
 
 .home-m-img2 {
-    /* border: 5px solid purple; */
-    width: 732px;
-    height: 483px;
+
+    max-width: 100%;
+    height: auto;
 }
+
+
 
 .home-m-h1 {
     /* border: 2px solid red; */
     width: 400px;
-    margin-left: 130px;
-    margin-top: 250px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+
 
     font-size: 60px;
     font-weight: 400;
@@ -104,20 +136,17 @@ body {
 }
 
 .signup-button {
-    margin-top: 305px;
     background-color: rgba(247, 37, 133, 1);
     color: rgba(155, 220, 240, 1);
     width: 150px;
     border: 2px solid rgba(76, 201, 240, 1)
 }
 
-.b-content {
-    margin-top: 30px;
-    /* border: 1px solid red; */
-    padding-left: 1000px;
-}
+
 
 .home-b-h4 {
+    margin-left: 200px;
+    font-size: 1.05em;
     color: rgba(58, 12, 163, 1);
 }
 
@@ -125,15 +154,292 @@ body {
     color: rgba(155, 220, 240, 1);
 }
 
-/*
-.homeimg2 {
-    border: solid black;
-    margin: 2px;
+.mic {
+    margin-left: 10px;
+    max-width: 15%
+}
+
+.note {
+    position: absolute;
+    margin-left: 1px;
+    max-width: 3%
+}
+
+
+@media only screen and (min-width: 450px) {
+
+    .head1 {
+
+        width: 21ch;
+        animation: typing 1.2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        /* border-right: 3px solid; */
+
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+
+    .head2 {
+
+        width: 18ch;
+        visibility: hidden;
+        animation: typing 1s steps(18), appear 0s 2.5s forwards, blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        /* border-right: 3px solid; */
+        animation-delay: 1.7s;
+
+
+    }
+
+    @keyframes appear {
+        to {
+            visibility: visible;
+        }
+    }
+
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+
+    .head3 {
+
+        visibility: hidden;
+
+        width: 7ch;
+        animation: typing 1s steps(10), appear 0s 4s forwards, blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        animation-delay: 2.5s;
+
+
+    }
+
+    @keyframes appear {
+        to {
+            visibility: visible;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+
+
+    .home-t-h3 {
+        display: inline-block;
+        animation: slideLeft 1.5s forwards;
+        opacity: 0;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-delay: 4.3s;
+
+    }
+
+    @keyframes slideLeft {
+        from {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
+
 
 }
 
-.homeh2 {
-    border: solid black;
-    margin: 2px;
+@media only screen and (min-width: 950px) {
 
-} */
+    section {
+        /* min-height: 100vh;
+        width: 100%;*/
+        /* display: flex; */
+    }
+
+    .sec1 {
+        position: relative;
+    }
+
+    .scroll {
+        position: sticky;
+        margin-top: 50px;
+        height: 50px;
+        width: 30px;
+        border: 2px solid rgba(247, 37, 133, 1);
+        left: 50%;
+        bottom: 30px;
+        border-radius: 20px;
+        cursor: pointer;
+
+
+    }
+
+    .scroll::before,
+    .scroll::after {
+        content: '';
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        border: 2px solid rgba(76, 201, 240, 1);
+        height: 10px;
+        width: 10px;
+        transform: translate(-50%, -90%) rotate(45deg);
+
+        border-top: transparent;
+        border-left: transparent;
+
+        animation: scroll 1s ease-in-out infinite;
+
+
+    }
+
+    .scroll::after {
+
+        top: 30%;
+        animation-delay: .3s;
+
+
+
+    }
+
+    @keyframes scroll {
+
+        0% {
+            opacity: 0;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        60% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            top: 90%;
+        }
+
+    }
+
+
+    .top-content-left {
+        padding-top: 100px;
+
+    }
+
+
+
+    .home-t-img1 {
+        /* position: absolute; */
+        max-width: 100%;
+        height: 850px;
+    }
+
+    .home-m-img2 {
+
+        max-width: 100%;
+        height: 900px;
+    }
+
+    .home-m-h1 {
+        /* border: 2px solid red; */
+        width: 400px;
+        margin-top: 325px;
+
+    }
+
+    .signup-button {
+        margin-top: 375px;
+    }
+
+    .note {
+        max-width: 5%
+    }
+
+    .home-b-h4 {
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 1700px) {
+
+    .signup-button {
+        margin-top: 200px;
+    }
+
+    .home-t-h1 {
+        /* border: 2px solid red; */
+
+    }
+
+    .home-m-h1 {
+        /* border: 2px solid red; */
+
+        margin-top: 150px;
+
+    }
+
+
+
+}
+
+@media only screen and (min-width: 2100px) {
+
+    .signup-button {
+        margin-top: 300px;
+    }
+
+    .home-t-h1 {
+        /* border: 2px solid red; */
+
+    }
+
+    .home-m-h1 {
+        /* border: 2px solid red; */
+        margin-top: 250px;
+
+    }
+
+
+
+
+
+
+}

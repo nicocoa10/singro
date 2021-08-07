@@ -3,62 +3,57 @@
 
 {% block content %}
 
-<div class="row">
-        <div class="col-5 top-content-left">
-            <h1 class='home-t-h1'>Bringing songwriters and music producers together!</h1>
+<section class="sec1">
+<div class="row r">
+        <div class="col-lg-4 top-content-left">
+            <h1 class='home-t-h1 head1'>Bringing songwriters</h1>
+            <h1 class='home-t-h1 head2'>and music producers</h1>
+            <h1 class='home-t-h1 head3'>together!</h1>
+
             <h3 class='home-t-h3'>Collaboration through seemingless effort is our main mission</h1>
 
         </div>
-        <div class="col-7 top-content-right "> 
+        <div class="col-lg-8 top-content-right "> 
         <img class='home-t-img1' src="{% static 'musicsocial/images/imagepc.jpg' %}" alt="">
         </div>
         
     </div> 
-    <div class="row">
-        <div class="col-5 mid-content-left">
-            <img class='home-m-img2' src="{% static 'musicsocial/images/singer.jpg' %}" alt="">
+    <a href="#sec2">
+    <div class="scroll"></div>
+</a>
+</section>
+
+<section id="sec2">
+
+<div class="row r">
+        <div class="col-lg-4 mid-content-left">
+            <img class='home-m-img2' src="{% static 'musicsocial/images/mymic.jpg' %}" alt="">
         </div>
-        <div class="col-5 mid-content-right "> 
-                <h1 class='home-m-h1'>Join today and collaborate</h1>
+        <div class="col-lg-5 mid-content-right "> 
+                <div>
+                <h1 class='home-m-h1'>Join today and collaborate<span><img class='mic' src="{% static 'musicsocial/images/mic.png' %}" alt=""> <img class='note' src="{% static 'musicsocial/images/notes.png' %}" alt=""> </span></h1>
+                </div>
+
 
             {% comment %} <h1 class='home-m-h1'>Bringing songwriters and music producers together!</h1> {% endcomment %}
 
         </div>
-        <div class="col "> 
+        <div class="col-lg-2 "> 
             {% comment %} <button type="button" class="btn signup-button" href="{% url 'accounts:signup' %}" role ="button">Sign Up</button> {% endcomment %}
             <a class="btn signup-button" href="{% url 'accounts:signup' %}" role ="button">Sign Up</a>
 
+            <h4 class="home-b-h4">Already have an account ? <a class='login-home' href="{% url 'accounts:login' %}">Log In</a></h4>
+
 
             {% comment %} <h1 class='home-m-h1'>Bringing songwriters and music producers together!</h1> {% endcomment %}
 
         </div>
         
     </div> 
-    <div class="row">
-        <div class="col b-content ">
-
-        <h4 class="home-b-h4">Already have an account ? <a class='login-home' href="{% url 'accounts:login' %}">Log In</a></h4>
-
-        </div>
-
-        
-    </div> 
 
 
-        {% comment %} <div class="homeimg1">
-        <img class='logonav' src="{% static 'musicsocial/images/imagepc.jpg' %}" alt="">
-    
-    </div>
-        <div class="homeimg2">
-        <img class='logonav' src="{% static 'musicsocial/images/singer.jpg' %}" alt="">
-    
-    </div>
+</section>
 
-        <div class="homeh2">
-
-            <h1>Join today and collaborate</h1>
-
-    
-    </div> {% endcomment %}
+   
 
 {% endblock %}
