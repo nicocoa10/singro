@@ -19,7 +19,7 @@ html {
 }
 
 .navbar-collapse {
-    position: fixed;
+    /* position: fixed;
     top: 60px;
     left: 0;
     padding-left: 15px;
@@ -27,30 +27,16 @@ html {
     padding-top: 15px;
     padding-bottom: 25px;
     width: 100%;
-    background-image: linear-gradient(to bottom right, rgba(76, 201, 240, 1), rgba(67, 97, 238, 1));
-    border-top: 5px solid rgb(90, 103, 162);
+    background-image: linear-gradient(to bottom right, rgba(76, 201, 240, 1), rgba(67, 97, 238, 1)); */
+    /* border-top: 5px solid rgb(90, 103, 162);
     border-bottom: 5px solid rgb(240, 109, 168);
     border-left: 5px solid rgb(240, 109, 168);
-    border-right: 5px solid rgb(240, 109, 168);
+    border-right: 5px solid rgb(240, 109, 168); */
 
 
 }
 
-/* .navbar-collapse.collapsing {
-    height: 100%;
-    left: -75%;
-    transition: height 0s ease;
-}
 
-.navbar-collapse.show {
-    height: 100%;
-    left: 0;
-    transition: left 200ms ease-in-out;
-}
-
-.navbar-toggler.collapsed~.navbar-collapse {
-    transition: left 200ms ease-in;
-} */
 
 .navbar {
     /* margin-top: 3px; */
@@ -350,6 +336,8 @@ html {
 }
 
 @media only screen and (min-width: 950px) {
+
+
 
 
     .nav-item a {
