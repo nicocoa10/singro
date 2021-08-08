@@ -107,11 +107,16 @@ groups app uses several class based views in order to create groups and allow us
 #### posts
 posts allows users to create posts and group them by name . A specific authorized user can create a post then select which group the user wants to post to .
 
-                   
+ Change log :
+Currently the initial functionalities of the project have been implmented in the back end for making posts funtionality . All required views have been made and urls set up correctly. 11/19/20
+
+The project now contains full functonality to create accounts , make a group/song , join a group/song and make a post . 6/19/21                  
 
 ### Front End 
 
 I have spent a good amount of time building the design generated from the UI section of this project . I use only HTML , CSS and Javascript to build and construct the design by scratch . Some design things such as positioning of images changed along the development process . This was in order to fulfill other design requirements that came about when developing the front end of the app. 
+
+I focused on developing a design that is responsive for all screen types.
 
 Technologies and external libraries i ended up using : 
 
@@ -121,6 +126,7 @@ As i build the application ill keep updating this page , but this is the progres
 
 #### Home Page
 
+(GIF images may look blurry)
 ##### Desktop
 ![Singro home desktop  ](https://raw.githubusercontent.com/nicocoa10/sat337-test/master/ezgif.com-gif-maker.gif)
 
@@ -130,10 +136,6 @@ As i build the application ill keep updating this page , but this is the progres
 
 
                  
-Change log :
-Currently the initial functionalities of the project have been implmented in the back end for making posts funtionality . All required views have been made and urls set up correctly. 11/19/20
-
-The project now contains full functonality to create accounts , make a group/song , join a group/song and make a post . 6/19/21
 
         
 
