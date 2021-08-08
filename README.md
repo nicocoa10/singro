@@ -90,6 +90,45 @@ Current technologies used :
           Deployment (future) 
                  - Deployment to be determined using PythonAnywhere 
 
+### Back end 
+
+I used the Django web framework to implement all back end procedures of this app. 
+I mainly focused on 3 apps(within djangos structure) which are the following , 
+              
+                   - accounts 
+                   - groups 
+                   - posts 
+Each of the following above apps are in charge of specific tasks . and have their corresponding templates .
+
+#### accounts
+Accounts main goal is to use Djangos user authorization models to be able to create and authorize users .
+#### groups
+groups app uses several class based views in order to create groups and allow users to join a specifc group . Each group is composed of posts . 
+#### posts
+posts allows users to create posts and group them by name . A specific authorized user can create a post then select which group the user wants to post to .
+
+                   
+
+### Front End 
+
+I have spent a good amount of time building the design generated from the UI section of this project . I use only HTML , CSS and Javascript to build and construct the design by scratch . Some design things such as positioning of images changed along the development process . This was in order to fulfill other design requirements that came about when developing the front end of the app. 
+
+Technologies and external libraries i ended up using : 
+
+                            - Bootstrap 4 
+                            
+As i build the application ill keep updating this page , but this is the progress of the front end pages 
+
+#### Home Page
+
+##### Desktop
+![Singro home desktop  ](https://raw.githubusercontent.com/nicocoa10/sat337-test/master/ezgif.com-gif-maker.gif)
+
+
+##### Mobile
+![Singro home mobile ](https://github.com/nicocoa10/sat337-test/blob/master/ezgif.com-gif-maker%20(1).gif?raw=true)
+
+
                  
 Change log :
 Currently the initial functionalities of the project have been implmented in the back end for making posts funtionality . All required views have been made and urls set up correctly. 11/19/20
