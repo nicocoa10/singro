@@ -74,9 +74,21 @@ Here is an example of my home page wireframe,
 
 This is were i focused mainly on all details of each page , including colors , layout , structure , fonts , positioning , and usability . It was important to take into consideration all of the past designs , and feedback and apply it to the final design . Technically by this point the design aspect of the app has been well thought already , and many mistakes and errors have been caught throughout the process.
 
-Here is my final design of the home page as example , 
+Final Designs Prototypes :
+
+
+#### Home
 
 ![Singro home wireframe ](https://raw.githubusercontent.com/nicocoa10/singro/master/UI%3AUX%20Files/Prototype_4/Screen%20Shot%202021-07-30%20at%2011.09.52%20PM.png)
+
+#### Sign Up
+
+![Singro sign up prototype ](https://raw.githubusercontent.com/nicocoa10/singro/master/UI%3AUX%20Files/Prototype_4/Sign%20Up.png)
+
+#### Log In
+
+![Singro log in prototype](https://raw.githubusercontent.com/nicocoa10/singro/master/UI%3AUX%20Files/Prototype_4/Login.png)
+
 
 ## Development Approach 
 
