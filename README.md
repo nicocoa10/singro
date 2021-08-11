@@ -146,6 +146,14 @@ As i build the application ill keep updating this page , but this is the progres
 ##### Mobile
 ![Singro home mobile ](https://github.com/nicocoa10/sat337-test/blob/master/ezgif.com-gif-maker%20(1).gif?raw=true)
 
+#### Login Page 
+![Singro login ](https://raw.githubusercontent.com/nicocoa10/sat337-test/master/Screen%20Shot%202021-08-11%20at%202.25.33%20PM.png)
+
+#### Sign up Page 
+![Singro login ](https://raw.githubusercontent.com/nicocoa10/sat337-test/master/Screen%20Shot%202021-08-11%20at%202.25.50%20PM.png)
+
+
+
 
                  
 
