@@ -122,7 +122,10 @@ posts allows users to create posts and group them by name . A specific authorize
  Change log :
 Currently the initial functionalities of the project have been implmented in the back end for making posts funtionality . All required views have been made and urls set up correctly. 11/19/20
 
-The project now contains full functonality to create accounts , make a group/song , join a group/song and make a post . 6/19/21                  
+The project now contains full functonality to create accounts , make a group/song , join a group/song and make a post . 6/19/21  
+
+I realized that i will need more information from an user , and eventually to build a profile with more information so i will need an custom user model . I been working on creating my own user model . 6/19/21                  
+
 
 ### Front End 
 
