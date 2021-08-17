@@ -99,3 +99,47 @@ li {
     color: rgb(76, 0, 255);
 
 }
+
+/* .custom-radio-list {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+} */
+
+p {
+    color: rgba(58, 12, 163, 1);
+
+}
+
+form ul.custom-radio-list li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+form ul.custom-radio-list label {
+    float: none;
+    display: inline;
+
+}
+
+form ul.custom-radio-list input[type="radio"] {
+    margin: -2px 4px 0 0;
+    padding: 0;
+}
+
+form ul.custom-radio-list {
+    margin-left: 0;
+    padding: 0;
+}
+
+form ul.custom-radio-list li {
+    float: left;
+    padding-right: 7px;
+}
+
+ul {
+    margin: 1px solid black;
+}
