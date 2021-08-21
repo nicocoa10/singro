@@ -89,6 +89,11 @@ Final Designs Prototypes :
 
 ![Singro log in prototype](https://raw.githubusercontent.com/nicocoa10/singro/master/UI%3AUX%20Files/Prototype_4/Login.png)
 
+#### User Profile
+
+![Singro user profile prototype](https://raw.githubusercontent.com/nicocoa10/singro/master/UI%3AUX%20Files/Prototype_4/User%20Page.png)
+
+
 
 ## Development Approach 
 
