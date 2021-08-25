@@ -161,6 +161,9 @@ As i build the application ill keep updating this page , but this is the progres
 ![Singro login ](https://raw.githubusercontent.com/nicocoa10/sat337-test/master/Screen%20Shot%202021-08-11%20at%202.25.50%20PM.png)
 
 
+#### Profile Page 
+![Singro profile ](https://raw.githubusercontent.com/nicocoa10/sat337-test/master/Screen%20Shot%202021-08-24%20at%206.55.12%20PM.png)
+
 
 
                  
