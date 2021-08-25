@@ -9,6 +9,36 @@ html {
 
 }
 
+.dropdown {
+    padding-right: 10px;
+
+
+}
+
+
+
+.image-cropper {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-bottom: 10px;
+
+}
+
+
+
+/* .profile_pic {
+    position: relative;
+    width: 40px;
+    height: 40px;
+} */
+
+.material-icons-outlined.purple {
+    color: rgb(116, 10, 186);
+}
 
 
 .foot {
@@ -526,4 +556,91 @@ html {
 
 
 
+}
+
+
+/* css for profile page */
+
+.p-sec1 {
+    min-height: 30%;
+    width: 100%;
+    display: flex;
+}
+
+.p-sec2 {
+    min-height: 60%;
+    width: 100%;
+    display: flex;
+}
+
+.p-info {
+    width: 100%;
+    min-height: 60%;
+    background-color: white;
+
+
+}
+
+.p-pic {
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    width: 176px;
+    height: 176px;
+
+
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.profile_pic {
+    height: 50px;
+    width: 50px;
+}
+
+.p-r {
+    margin-top: 7%;
+    margin-left: 1%;
+}
+
+.p-about {
+    color: rgba(111, 116, 120, 1);
+}
+
+
+.p-link {
+    margin-top: 10px;
+}
+
+.p-user {
+    position: relative;
+    margin-top: 90px;
+    left: 50%;
+    /* left: 47.8%;
+    width: 10px;
+    height: 30px; */
+}
+
+.p-fav-g {
+    margin-bottom: 0px;
+    padding-left: 20px;
+
+}
+
+.p-fav-2 {
+    margin-bottom: 0px;
+    padding-left: 65px;
+
+}
+
+.p-n {
+    margin-bottom: 0px;
+    padding-left: 51px;
+
+}
+
+.p-sec {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: white;
 }

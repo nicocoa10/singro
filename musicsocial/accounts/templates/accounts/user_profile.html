@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap3 %}
+
+{% block content %}
+
+   {% comment %} <h1>In User Profile Page</h1> {% endcomment %}
+
+   {% comment %} {{ page_user }} {% endcomment %}
+
+   <script src="https://unpkg.com/css-doodle@0.19.2/css-doodle.min.js"></script>
+
+
+
+   <section class= 'p-sec1'>
+   <css-doodle>
+  :doodle {
+   @grid: 6/100vmax
+   width: 100%; 
+   min-height: 30%;
+   background-image: linear-gradient(to bottom right, rgba(114, 9, 183, 1), rgba(114, 9, 183, 0.26));
+
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  :after {
+    content: \@hex.@r(0x2500, 0x257f);
+    color: hsla(@r360, 70%, 70%, @r.9);
+    font-size: 5vmin;
+  }
+</css-doodle>
+   
+   </section>
+
+   <div class='p-sec'>
+     <div class='p-pic'>
+ <img src="{% static 'profile/' %}{{ user.profile_pic }}" width="200" height="176" class="rounded-circle">
+
+   </div>
+
+   <div class="p-user">
+                     <h2 class='p-n'>{{user.first_name}}</h2>
+                     <h5 class='p-fav-g'>Favorite Genre:</h5>
+                     <h6 class='p-fav-2'>{{user.favorite_genre}}</h6>
+
+
+            </div>
+   </div>
+ 
+
+
+
+    <section class= 'p-sec2'>
+
+
+      <div class= 'container-fluid p-info'>
+             
+         <div class="row p-r">
+                 <div class="col-lg-3"> 
+                     <h2 class='p-about'>About</h2>
+                 </div>
+
+                   <div class="col-lg-9"> 
+                     <p>{{ user.about }}</p>
+                 </div>
+
+
+         
+         </div>
+
+         <div class="row p-r">
+                 <div class="col-lg-3"> 
+                     <h2 class='p-about'>Link</h2>
+                 </div>
+
+                   <div class="col-lg-9 p-link"> 
+                     <a href="{{user.music_link}}">{{user.music_link}}</a>
+                 </div>
+
+
+         
+         </div>
+
+
+      </div>
+   
+   </section>
+
+
+
+{% endblock %}

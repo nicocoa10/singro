@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'musicsocial/css/master.css' %}">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
   </head>
   <body>
@@ -25,17 +26,31 @@
     <ul class="navbar-nav ml-auto ">
     {% if user.is_authenticated %}
       <li class="nav-item">
-      <a class="nav-link" href="{% url 'posts:create' %}">Post</a>
+      <a class="nav-link" href="{% url 'posts:create' %}">Explore</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'groups:all' %}">Groups</a>
+        <a class="nav-link" href="{% url 'groups:all' %}">Post</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'groups:create' %}">Create Group</a>
+        <a class="nav-link" href="{% url 'groups:create' %}"><span class="material-icons">
+favorite
+</span>
+</a>
       </li>
-      <li class="nav-item">
-      <a class="nav-link" href="{% url 'accounts:logout' %}">Log Out</a>
-      </li>
+      <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="{% static 'profile/' %}{{ user.profile_pic }}" width="40" height="40" class="rounded-circle">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'accounts:profile' user.id %}">Profile</a>
+          <a class="dropdown-item" href="#">Edit Profile</a>
+          <a class="dropdown-item"  href="{% url 'accounts:logout' %}">Log Out</a>
+        </div>
+      </li>   
+          {% comment %} <li class="nav-item">
+      <a class="nav-link" href="{% url 'accounts:profile' user.id %}"><div class='image-cropper'><img class='profile_pic' src="{% static 'profile/' %}{{ user.profile_pic }}" alt="">
+</div></a>
+      </li> {% endcomment %}
     
     {% else %}
 
@@ -54,11 +69,11 @@
 </nav>
 
   
-    <div class="container-fluid">
+    {% comment %} <div class="container-fluid"> {% endcomment %}
      
         {% block content %}
         {% endblock %}
-    </div>
+    {% comment %} </div> {% endcomment %}
 
     <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
